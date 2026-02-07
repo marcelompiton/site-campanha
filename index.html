@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Rafaela Consalter &mdash; Candidata a Defensora P&uacute;blica-Geral do RS">
   <meta property="og:description" content="25 propostas concretas em 6 eixos para uma Defensoria com transpar&ecirc;ncia, inova&ccedil;&atilde;o e respeito. Conhe&ccedil;a o plano.">
-  <meta property="og:image" content="foto-rafaela.jpeg">
+  <meta property="og:image" content="https://marcelompiton.github.io/site-campanha/foto-rafaela.jpeg">
   <meta property="og:locale" content="pt_BR">
 
   <!-- Favicon inline SVG -->
@@ -408,19 +408,60 @@
       margin-bottom: 20px;
     }
 
+    .hero-title .highlight-gold,
+    .hero-title .highlight-green,
+    .hero-title .highlight-blue {
+      font-style: normal;
+      position: relative;
+      display: inline-block;
+    }
+
     .hero-title .highlight-gold {
       color: var(--color-gold-300);
-      font-style: normal;
     }
 
     .hero-title .highlight-green {
       color: #7ecba1;
-      font-style: normal;
     }
 
     .hero-title .highlight-blue {
       color: #8ab4f8;
-      font-style: normal;
+    }
+
+    .hero-title .highlight-gold::after,
+    .hero-title .highlight-green::after,
+    .hero-title .highlight-blue::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 2px;
+      width: 0;
+      height: 3px;
+      border-radius: 2px;
+      transition: none;
+    }
+
+    .hero-title .highlight-gold::after {
+      background: rgba(212, 186, 106, 0.5);
+    }
+
+    .hero-title .highlight-green::after {
+      background: rgba(126, 203, 161, 0.5);
+    }
+
+    .hero-title .highlight-blue::after {
+      background: rgba(138, 180, 248, 0.5);
+    }
+
+    .hero-title .highlight-gold.animate-underline::after,
+    .hero-title .highlight-green.animate-underline::after,
+    .hero-title .highlight-blue.animate-underline::after {
+      animation: highlightGrow 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    }
+
+    @keyframes highlightGrow {
+      0% { width: 0; }
+      100% { width: 100%; }
     }
 
     .hero-subtitle {
@@ -613,6 +654,85 @@
       font-size: 0.92rem;
       color: var(--color-gray-600);
       font-style: italic;
+    }
+
+    /* ============================================
+       TIMELINE
+       ============================================ */
+    .timeline {
+      position: relative;
+      padding-left: 32px;
+      margin-top: 40px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--color-gold-400), var(--color-green-700));
+      border-radius: 1px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-bottom: 28px;
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -32px;
+      top: 6px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--color-white);
+      border: 3px solid var(--color-gold-400);
+      z-index: 1;
+      transition: all var(--transition-base);
+    }
+
+    .timeline-item:hover::before {
+      background: var(--color-gold-400);
+      box-shadow: 0 0 0 4px rgba(212, 186, 106, 0.2);
+    }
+
+    .timeline-item.timeline-current::before {
+      background: var(--color-green-700);
+      border-color: var(--color-green-700);
+      box-shadow: 0 0 0 4px rgba(38, 97, 63, 0.15);
+    }
+
+    .timeline-year {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--color-gold-600);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+
+    .timeline-title {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-green-900);
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+
+    .timeline-desc {
+      font-size: 0.88rem;
+      color: var(--color-gray-500);
+      line-height: 1.6;
     }
 
     /* ============================================
@@ -1146,7 +1266,7 @@
     .whatsapp-float {
       position: fixed;
       bottom: 24px;
-      right: 24px;
+      left: 24px;
       width: 56px;
       height: 56px;
       background: #25D366;
@@ -1299,15 +1419,49 @@
           <p>
             Bacharel em Direito (1992&ndash;1997) e Especialista em Direito do Consumidor e Direitos Fundamentais (2004&ndash;2006), ambos pela Universidade Federal do Rio Grande do Sul (UFRGS).
           </p>
-          <p>
-            Tomou posse em 2001, tendo assumido a comarca de Barra do Ribeiro e Gua&iacute;ba. Iniciou sua trajet&oacute;ria pol&iacute;tico-institucional como Secret&aacute;ria Executiva da ADPERGS (2005). Na primeira elei&ccedil;&atilde;o para Defensor P&uacute;blico-Geral, em 2006, foi Assessora e Chefe de Gabinete. Assumiu o ent&atilde;o Centro de Apoio Operacional em 2010, foi Presidente dos III e V Concurso para a Carreira, e do II Concurso para o Quadro de Servidores.
-          </p>
-          <p>
-            Foi Subcorregedora-Geral (2012), Dirigente do NUDECONTU e do NUDEC. Criou e implantou a C&acirc;mara de Concilia&ccedil;&atilde;o C&iacute;vel (2018). Foi Subdefensora P&uacute;blica-Geral no per&iacute;odo de 2020 a 2023.
-          </p>
-          <p>
-            Atuou na Unidade Central de Atendimento e Ajuizamento (UCAA), nos Foros Central, da Restinga e do Partenon. Atualmente est&aacute; classificada na 10&ordf; Defensoria Regional C&iacute;vel de 2&ordm; Grau, com atribui&ccedil;&atilde;o na mat&eacute;ria c&iacute;vel que tramita nas 1&ordf; e 3&ordf; Vice Presid&ecirc;ncias do TJRS.
-          </p>
+
+          <div class="timeline fade-in">
+            <div class="timeline-item">
+              <div class="timeline-year">2001</div>
+              <div class="timeline-title">Posse como Defensora P&uacute;blica</div>
+              <div class="timeline-desc">I Concurso para a Carreira. Comarca de Barra do Ribeiro e Gua&iacute;ba.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2005</div>
+              <div class="timeline-title">Secret&aacute;ria Executiva da ADPERGS</div>
+              <div class="timeline-desc">In&iacute;cio da trajet&oacute;ria pol&iacute;tico-institucional.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2006</div>
+              <div class="timeline-title">Assessora e Chefe de Gabinete</div>
+              <div class="timeline-desc">Primeira elei&ccedil;&atilde;o para Defensor P&uacute;blico-Geral.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2010</div>
+              <div class="timeline-title">Centro de Apoio Operacional</div>
+              <div class="timeline-desc">Presidente dos III e V Concurso para a Carreira e do II Concurso para Servidores.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2012</div>
+              <div class="timeline-title">Subcorregedora-Geral</div>
+              <div class="timeline-desc">Dirigente do NUDECONTU e do NUDEC.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2018</div>
+              <div class="timeline-title">C&acirc;mara de Concilia&ccedil;&atilde;o C&iacute;vel</div>
+              <div class="timeline-desc">Cria&ccedil;&atilde;o e implanta&ccedil;&atilde;o da C&acirc;mara de Concilia&ccedil;&atilde;o C&iacute;vel.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2020 &ndash; 2023</div>
+              <div class="timeline-title">Subdefensora P&uacute;blica-Geral</div>
+              <div class="timeline-desc">Cargo de vice-chefia da institui&ccedil;&atilde;o.</div>
+            </div>
+            <div class="timeline-item timeline-current">
+              <div class="timeline-year">Atual</div>
+              <div class="timeline-title">10&ordf; Defensoria Regional C&iacute;vel de 2&ordm; Grau</div>
+              <div class="timeline-desc">Mat&eacute;ria c&iacute;vel nas 1&ordf; e 3&ordf; Vice Presid&ecirc;ncias do TJRS. Foros Central, Restinga e Partenon.</div>
+            </div>
+          </div>
 
           <div class="about-highlights">
             <div class="about-highlight-card">
@@ -1667,6 +1821,21 @@
           <div class="gallery-slide">
             <img src="6.jpeg" alt="Rafaela Consalter em atua&ccedil;&atilde;o na Defensoria P&uacute;blica" loading="lazy">
           </div>
+          <div class="gallery-slide">
+            <img src="WhatsApp Image 2026-02-07 at 18.53.52 (2).jpeg" alt="Rafaela Consalter em atua&ccedil;&atilde;o na Defensoria P&uacute;blica" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="WhatsApp Image 2026-02-07 at 18.53.52 (1).jpeg" alt="Rafaela Consalter em atua&ccedil;&atilde;o na Defensoria P&uacute;blica" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="WhatsApp Image 2026-02-07 at 18.53.52.jpeg" alt="Rafaela Consalter em atua&ccedil;&atilde;o na Defensoria P&uacute;blica" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="WhatsApp Image 2026-02-07 at 18.53.53 (1).jpeg" alt="Rafaela Consalter em atua&ccedil;&atilde;o na Defensoria P&uacute;blica" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="WhatsApp Image 2026-02-07 at 18.53.53.jpeg" alt="Rafaela Consalter em atua&ccedil;&atilde;o na Defensoria P&uacute;blica" loading="lazy">
+          </div>
         </div>
 
         <div class="gallery-controls">
@@ -2003,6 +2172,27 @@
 
       const counterSection = document.querySelector('.proposals-counter');
       if (counterSection) counterObserver.observe(counterSection);
+
+      // ---- Hero highlight underline animation ----
+      const highlights = document.querySelectorAll('.hero-title .highlight-gold, .hero-title .highlight-green, .hero-title .highlight-blue');
+      let highlightTriggered = false;
+
+      const heroObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !highlightTriggered) {
+            highlightTriggered = true;
+            highlights.forEach((el, i) => {
+              setTimeout(() => {
+                el.classList.add('animate-underline');
+              }, 800 + i * 400);
+            });
+            heroObserver.disconnect();
+          }
+        });
+      }, { threshold: 0.3 });
+
+      const heroTitle = document.querySelector('.hero-title');
+      if (heroTitle) heroObserver.observe(heroTitle);
 
     })();
   </script>
