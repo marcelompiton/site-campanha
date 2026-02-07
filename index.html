@@ -3,8 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rafaela Consalter &mdash; Candidata a Defensora P&uacute;blica-Geral do RS</title>
-  <meta name="description" content="Rafaela Consalter &mdash; Candidatura &agrave; Defensoria P&uacute;blica-Geral do Estado do Rio Grande do Sul. Transpar&ecirc;ncia, inova&ccedil;&atilde;o e valoriza&ccedil;&atilde;o da carreira.">
+  <title>Rafaela Consalter &mdash; Candidata a Defensora P&uacute;blica-Geral do RS | 26 propostas concretas</title>
+  <meta name="description" content="Rafaela Consalter &mdash; Candidatura &agrave; Defensoria P&uacute;blica-Geral do Estado do Rio Grande do Sul. 26 propostas concretas em 6 eixos: carreira, organiza&ccedil;&atilde;o, inova&ccedil;&atilde;o, transpar&ecirc;ncia, atua&ccedil;&atilde;o extrajudicial e servidores.">
+  <meta name="keywords" content="Rafaela Consalter, Defensora P&uacute;blica-Geral, Rio Grande do Sul, Defensoria P&uacute;blica, candidatura, propostas, transpar&ecirc;ncia, inova&ccedil;&atilde;o, carreira">
+  <meta name="author" content="Rafaela Consalter">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rafaela Consalter &mdash; Candidata a Defensora P&uacute;blica-Geral do RS">
+  <meta property="og:description" content="26 propostas concretas em 6 eixos para uma Defensoria com transpar&ecirc;ncia, inova&ccedil;&atilde;o e respeito. Conhe&ccedil;a o plano.">
+  <meta property="og:image" content="foto-rafaela.jpeg">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Favicon inline SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231a3a2a'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='30' fill='%23d4ba6a'%3ERC%3C/text%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -1127,6 +1141,66 @@
     }
 
     /* ============================================
+       FLOATING WHATSAPP BUTTON
+       ============================================ */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 56px;
+      height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+      z-index: 999;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+      text-decoration: none;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 24px rgba(37,211,102,0.5);
+    }
+
+    .whatsapp-float svg {
+      width: 28px;
+      height: 28px;
+      fill: #fff;
+    }
+
+    /* ============================================
+       PROPOSAL COUNTER
+       ============================================ */
+    .proposals-counter {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .counter-item {
+      text-align: center;
+    }
+
+    .counter-number {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-green-800);
+      line-height: 1;
+    }
+
+    .counter-label {
+      font-size: 0.85rem;
+      color: var(--color-gray-500);
+      margin-top: 4px;
+    }
+
+    /* ============================================
        REDUCED MOTION
        ============================================ */
     @media (prefers-reduced-motion: reduce) {
@@ -1229,6 +1303,25 @@
             Esta candidatura nasce do di&aacute;logo com colegas, da escuta atenta das demandas da carreira e da convic&ccedil;&atilde;o de que &eacute; poss&iacute;vel construir uma gest&atilde;o transparente, eficiente e verdadeiramente comprometida com quem faz a Defensoria P&uacute;blica funcionar todos os dias.
           </p>
 
+          <div class="about-highlights">
+            <div class="about-highlight-card">
+              <div class="label">Experi&ecirc;ncia</div>
+              <div class="value">Defensora P&uacute;blica h&aacute; mais de 10 anos</div>
+            </div>
+            <div class="about-highlight-card">
+              <div class="label">Atua&ccedil;&atilde;o</div>
+              <div class="value">Capital e Interior do RS</div>
+            </div>
+            <div class="about-highlight-card">
+              <div class="label">Forma&ccedil;&atilde;o</div>
+              <div class="value">S&oacute;lida base acad&ecirc;mica e pr&aacute;tica</div>
+            </div>
+            <div class="about-highlight-card">
+              <div class="label">Gest&atilde;o</div>
+              <div class="value">Atendimento na ponta e articula&ccedil;&atilde;o institucional</div>
+            </div>
+          </div>
+
           <div class="about-note">
             O curr&iacute;culo completo de Rafaela Consalter ser&aacute; disponibilizado em breve nesta p&aacute;gina, com detalhamento de sua forma&ccedil;&atilde;o acad&ecirc;mica, cargos exercidos e contribui&ccedil;&otilde;es &agrave; Defensoria P&uacute;blica.
           </div>
@@ -1244,6 +1337,18 @@
         <div class="section-divider"></div>
         <h2>Propostas e Eixos da Campanha</h2>
         <p>Um plano concreto para a Defensoria que o Rio Grande do Sul precisa &mdash; organizado em eixos tem&aacute;ticos com a&ccedil;&otilde;es objetivas.</p>
+      </div>
+
+      <!-- Proposals Counter -->
+      <div class="proposals-counter fade-in">
+        <div class="counter-item">
+          <div class="counter-number">26</div>
+          <div class="counter-label">propostas concretas</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-number">6</div>
+          <div class="counter-label">eixos tem&aacute;ticos</div>
+        </div>
       </div>
 
       <!-- Axis Navigation -->
@@ -1626,6 +1731,11 @@
       </div>
     </div>
   </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/5551996783269" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Fale comigo no WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 
   <!-- Scroll to top -->
   <button class="scroll-top" aria-label="Voltar ao topo">
