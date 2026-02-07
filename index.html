@@ -1,0 +1,1860 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafaela Consalter &mdash; Candidata a Defensora P&uacute;blica-Geral do RS</title>
+  <meta name="description" content="Rafaela Consalter &mdash; Candidatura &agrave; Defensoria P&uacute;blica-Geral do Estado do Rio Grande do Sul. Transpar&ecirc;ncia, inova&ccedil;&atilde;o e valoriza&ccedil;&atilde;o da carreira.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================
+       CSS CUSTOM PROPERTIES
+       ============================================ */
+    :root {
+      --color-green-900: #1a3a2a;
+      --color-green-800: #1e4d35;
+      --color-green-700: #26613f;
+      --color-green-600: #2d7a4a;
+      --color-green-100: #e8f5ed;
+      --color-green-50: #f2faf5;
+
+      --color-gold-600: #8b7332;
+      --color-gold-500: #a3873c;
+      --color-gold-400: #c4a44e;
+      --color-gold-300: #d4ba6a;
+      --color-gold-200: #e6d49a;
+      --color-gold-100: #f5efd5;
+      --color-gold-50: #faf8ec;
+
+      --color-navy-900: #0f1b2d;
+      --color-navy-800: #152238;
+      --color-navy-700: #1b2d4a;
+      --color-navy-600: #243b5c;
+
+      --color-white: #ffffff;
+      --color-gray-50: #f8f9fa;
+      --color-gray-100: #f1f3f5;
+      --color-gray-200: #e2e5e9;
+      --color-gray-300: #ced4da;
+      --color-gray-400: #adb5bd;
+      --color-gray-500: #868e96;
+      --color-gray-600: #5a6270;
+      --color-gray-700: #3d4450;
+      --color-gray-800: #2b3038;
+      --color-gray-900: #1a1d23;
+
+      --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+      --shadow-lg: 0 8px 30px rgba(0,0,0,0.1);
+      --shadow-xl: 0 12px 40px rgba(0,0,0,0.12);
+
+      --transition-fast: 200ms ease;
+      --transition-base: 300ms ease;
+      --transition-slow: 500ms ease;
+
+      --max-width: 1200px;
+      --header-height: 72px;
+    }
+
+    /* ============================================
+       RESET & BASE
+       ============================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--header-height);
+    }
+
+    body {
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--color-gray-800);
+      background-color: var(--color-white);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--color-green-700);
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    a:hover {
+      color: var(--color-green-600);
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--color-gold-400);
+      outline-offset: 2px;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      color: var(--color-green-900);
+      line-height: 1.3;
+    }
+
+    /* ============================================
+       UTILITY
+       ============================================ */
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* ============================================
+       HEADER
+       ============================================ */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--header-height);
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-gray-200);
+      z-index: 1000;
+      transition: box-shadow var(--transition-base);
+    }
+
+    .header.scrolled {
+      box-shadow: var(--shadow-md);
+    }
+
+    .header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .header-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .header-brand-name {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-green-900);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .header-brand-role {
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--color-gold-600);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      line-height: 1.3;
+    }
+
+    .nav-desktop {
+      display: none;
+    }
+
+    .nav-desktop a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--color-gray-600);
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: all var(--transition-fast);
+      position: relative;
+    }
+
+    .nav-desktop a:hover,
+    .nav-desktop a.active {
+      color: var(--color-green-800);
+      background: var(--color-green-50);
+    }
+
+    .nav-desktop a::after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--color-gold-400);
+      transition: all var(--transition-base);
+      transform: translateX(-50%);
+    }
+
+    .nav-desktop a.active::after {
+      width: 24px;
+    }
+
+    /* Mobile menu button */
+    .menu-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background var(--transition-fast);
+    }
+
+    .menu-toggle:hover {
+      background: var(--color-gray-100);
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--color-gray-700);
+      position: relative;
+      transition: background var(--transition-fast);
+    }
+
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 2px;
+      background: var(--color-gray-700);
+      left: 0;
+      transition: all var(--transition-base);
+    }
+
+    .menu-toggle span::before { top: -7px; }
+    .menu-toggle span::after { bottom: -7px; }
+
+    .menu-toggle[aria-expanded="true"] span {
+      background: transparent;
+    }
+
+    .menu-toggle[aria-expanded="true"] span::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    .menu-toggle[aria-expanded="true"] span::after {
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
+
+    /* Mobile nav overlay */
+    .nav-mobile {
+      position: fixed;
+      top: var(--header-height);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255,255,255,0.98);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      padding: 32px 24px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-8px);
+      transition: all var(--transition-base);
+    }
+
+    .nav-mobile.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .nav-mobile a {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--color-gray-700);
+      padding: 16px 0;
+      border-bottom: 1px solid var(--color-gray-100);
+      transition: all var(--transition-fast);
+    }
+
+    .nav-mobile a:hover,
+    .nav-mobile a:focus {
+      color: var(--color-green-800);
+      padding-left: 8px;
+    }
+
+    /* ============================================
+       HERO
+       ============================================ */
+    .hero {
+      padding-top: calc(var(--header-height) + 48px);
+      padding-bottom: 64px;
+      background: linear-gradient(170deg, var(--color-green-900) 0%, var(--color-navy-800) 100%);
+      position: relative;
+      overflow: hidden;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(196,164,78,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 120px;
+      background: linear-gradient(to top, rgba(255,255,255,0.03), transparent);
+      pointer-events: none;
+    }
+
+    .hero .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content {
+      text-align: center;
+      max-width: 680px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-gold-300);
+      border: 1px solid rgba(196,164,78,0.3);
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      color: var(--color-white);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero-title .highlight-gold {
+      color: var(--color-gold-300);
+      font-style: normal;
+    }
+
+    .hero-title .highlight-green {
+      color: #7ecba1;
+      font-style: normal;
+    }
+
+    .hero-title .highlight-blue {
+      color: #8ab4f8;
+      font-style: normal;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+      margin-bottom: 32px;
+      font-weight: 300;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--color-green-900);
+      background: var(--color-gold-300);
+      padding: 14px 32px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: all var(--transition-base);
+      text-decoration: none;
+    }
+
+    .hero-cta:hover {
+      background: var(--color-gold-200);
+      color: var(--color-green-900);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(196,164,78,0.3);
+    }
+
+    .hero-photo {
+      width: 260px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 3px solid rgba(196,164,78,0.3);
+      background: rgba(255,255,255,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-photo-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      color: rgba(255,255,255,0.3);
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-photo-placeholder svg {
+      width: 48px;
+      height: 48px;
+      stroke: rgba(255,255,255,0.2);
+    }
+
+    /* Decorative line */
+    .section-divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--color-gold-400), var(--color-gold-200));
+      border-radius: 2px;
+      margin: 0 auto 24px;
+    }
+
+    /* ============================================
+       SECTIONS — GENERAL
+       ============================================ */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-alt {
+      background: var(--color-gray-50);
+    }
+
+    .section-dark {
+      background: var(--color-green-900);
+      color: var(--color-white);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 56px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+      margin-bottom: 16px;
+    }
+
+    .section-dark .section-header h2 {
+      color: var(--color-white);
+    }
+
+    .section-header p {
+      font-size: 1.05rem;
+      color: var(--color-gray-500);
+      line-height: 1.7;
+    }
+
+    .section-dark .section-header p {
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* ============================================
+       ABOUT / BIOGRAPHY
+       ============================================ */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+      font-size: 1.02rem;
+      color: var(--color-gray-700);
+    }
+
+    .about-text p:first-of-type::first-letter {
+      font-family: var(--font-serif);
+      font-size: 3.2rem;
+      font-weight: 700;
+      float: left;
+      line-height: 1;
+      margin-right: 8px;
+      margin-top: 4px;
+      color: var(--color-green-800);
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .about-highlight-card {
+      background: var(--color-white);
+      border: 1px solid var(--color-gray-200);
+      border-radius: 12px;
+      padding: 20px;
+      transition: all var(--transition-base);
+    }
+
+    .about-highlight-card:hover {
+      border-color: var(--color-gold-300);
+      box-shadow: var(--shadow-md);
+    }
+
+    .about-highlight-card .label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--color-gold-600);
+      margin-bottom: 4px;
+    }
+
+    .about-highlight-card .value {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-green-900);
+    }
+
+    .about-note {
+      margin-top: 32px;
+      padding: 20px 24px;
+      background: var(--color-gold-50);
+      border-left: 3px solid var(--color-gold-400);
+      border-radius: 0 8px 8px 0;
+      font-size: 0.92rem;
+      color: var(--color-gray-600);
+      font-style: italic;
+    }
+
+    /* ============================================
+       PROPOSALS
+       ============================================ */
+    .proposals-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 48px;
+    }
+
+    .proposals-nav button {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 10px 20px;
+      border: 1px solid var(--color-gray-200);
+      background: var(--color-white);
+      color: var(--color-gray-600);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      white-space: nowrap;
+    }
+
+    .proposals-nav button:hover {
+      border-color: var(--color-green-600);
+      color: var(--color-green-700);
+    }
+
+    .proposals-nav button.active {
+      background: var(--color-green-800);
+      color: var(--color-white);
+      border-color: var(--color-green-800);
+    }
+
+    .proposals-category {
+      margin-bottom: 56px;
+      scroll-margin-top: calc(var(--header-height) + 24px);
+    }
+
+    .proposals-category-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--color-gray-100);
+    }
+
+    .proposals-category-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background: var(--color-green-100);
+      color: var(--color-green-800);
+    }
+
+    .proposals-category-icon svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    .proposals-category-header h3 {
+      font-size: 1.3rem;
+      color: var(--color-green-900);
+    }
+
+    .proposals-category-header h3 .axis-number {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-gold-500);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .proposals-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .proposal-card {
+      background: var(--color-white);
+      border: 1px solid var(--color-gray-200);
+      border-radius: 12px;
+      padding: 24px;
+      transition: all var(--transition-base);
+      cursor: default;
+    }
+
+    .proposal-card:hover {
+      border-color: var(--color-gold-300);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .proposal-card h4 {
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-green-900);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .proposal-card p {
+      font-size: 0.92rem;
+      color: var(--color-gray-600);
+      line-height: 1.65;
+    }
+
+    .proposal-card .proposal-expand {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 12px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--color-green-700);
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 4px 0;
+      transition: color var(--transition-fast);
+    }
+
+    .proposal-card .proposal-expand:hover {
+      color: var(--color-green-600);
+    }
+
+    .proposal-card .proposal-expand svg {
+      width: 14px;
+      height: 14px;
+      transition: transform var(--transition-fast);
+    }
+
+    .proposal-card .proposal-expand.expanded svg {
+      transform: rotate(180deg);
+    }
+
+    .proposal-card .proposal-detail {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height var(--transition-base);
+    }
+
+    .proposal-card .proposal-detail-inner {
+      padding-top: 12px;
+      font-size: 0.9rem;
+      color: var(--color-gray-500);
+      line-height: 1.65;
+      border-top: 1px solid var(--color-gray-100);
+      margin-top: 12px;
+    }
+
+    /* ============================================
+       MANIFESTO / WHY THIS CANDIDACY
+       ============================================ */
+    .manifesto-content {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .manifesto-content blockquote {
+      font-family: var(--font-serif);
+      font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+      color: rgba(255,255,255,0.92);
+      line-height: 1.7;
+      position: relative;
+      padding: 0;
+      border: none;
+      margin-bottom: 32px;
+    }
+
+    .manifesto-content blockquote::before {
+      content: '\201C';
+      font-family: var(--font-serif);
+      font-size: 4rem;
+      color: var(--color-gold-400);
+      position: absolute;
+      top: -20px;
+      left: -10px;
+      line-height: 1;
+      opacity: 0.5;
+    }
+
+    .manifesto-content p {
+      font-size: 1.02rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+
+    .manifesto-signature {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .manifesto-signature-line {
+      width: 40px;
+      height: 2px;
+      background: var(--color-gold-400);
+    }
+
+    .manifesto-signature-text {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--color-gold-300);
+      font-style: italic;
+    }
+
+    /* ============================================
+       GALLERY / CAROUSEL
+       ============================================ */
+    .gallery {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      background: var(--color-gray-100);
+    }
+
+    .gallery-track {
+      display: flex;
+      transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      will-change: transform;
+    }
+
+    .gallery-slide {
+      min-width: 100%;
+      position: relative;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+    }
+
+    .gallery-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: 20px 0;
+    }
+
+    .gallery-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--color-gray-200);
+      background: var(--color-white);
+      color: var(--color-gray-700);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition-fast);
+      flex-shrink: 0;
+    }
+
+    .gallery-btn:hover {
+      border-color: var(--color-green-600);
+      color: var(--color-green-800);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .gallery-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .gallery-dots {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .gallery-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-gray-300);
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .gallery-dot.active {
+      background: var(--color-green-700);
+      width: 24px;
+      border-radius: 4px;
+    }
+
+    /* ============================================
+       CONTACT
+       ============================================ */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact-card {
+      text-align: center;
+    }
+
+    .contact-card p {
+      font-size: 1.02rem;
+      color: var(--color-gray-600);
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-gray-700);
+      padding: 14px 24px;
+      border: 1px solid var(--color-gray-200);
+      border-radius: 10px;
+      transition: all var(--transition-base);
+      background: var(--color-white);
+    }
+
+    .social-link:hover {
+      color: var(--color-green-800);
+      border-color: var(--color-green-600);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .social-link svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    .footer {
+      background: var(--color-navy-900);
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer-brand {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-white);
+    }
+
+    .footer-brand span {
+      color: var(--color-gold-400);
+    }
+
+    .footer-text {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.6;
+    }
+
+    .footer-divider {
+      width: 40px;
+      height: 1px;
+      background: rgba(255,255,255,0.1);
+    }
+
+    /* ============================================
+       SCROLL TO TOP
+       ============================================ */
+    .scroll-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--color-green-800);
+      color: var(--color-white);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition: all var(--transition-base);
+      z-index: 100;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .scroll-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .scroll-top:hover {
+      background: var(--color-green-700);
+      transform: translateY(-2px);
+    }
+
+    .scroll-top svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* ============================================
+       ANIMATIONS
+       ============================================ */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-in-delay-1 { transition-delay: 0.1s; }
+    .fade-in-delay-2 { transition-delay: 0.2s; }
+    .fade-in-delay-3 { transition-delay: 0.3s; }
+
+    /* ============================================
+       RESPONSIVE — TABLET+
+       ============================================ */
+    @media (min-width: 768px) {
+      .hero .container {
+        flex-direction: row;
+        text-align: left;
+      }
+
+      .hero-content {
+        text-align: left;
+        flex: 1;
+      }
+
+      .hero-photo {
+        width: 300px;
+      }
+
+      .proposals-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about-highlights {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    /* ============================================
+       RESPONSIVE — DESKTOP
+       ============================================ */
+    @media (min-width: 1024px) {
+      .nav-desktop {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .menu-toggle {
+        display: none;
+      }
+
+      .section {
+        padding: 100px 0;
+      }
+
+      .hero {
+        padding-top: calc(var(--header-height) + 80px);
+        padding-bottom: 100px;
+      }
+
+      .hero-photo {
+        width: 340px;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ============================================
+       REDUCED MOTION
+       ============================================ */
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .fade-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="#inicio" class="header-brand" aria-label="Voltar ao topo">
+        <span class="header-brand-name">Rafaela Consalter</span>
+        <span class="header-brand-role">Defensora P&uacute;blica-Geral &middot; RS</span>
+      </a>
+
+      <nav class="nav-desktop" role="navigation" aria-label="Menu principal">
+        <a href="#inicio">In&iacute;cio</a>
+        <a href="#sobre">Quem sou</a>
+        <a href="#propostas">Propostas</a>
+        <a href="#manifesto">Por que agora</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <nav class="nav-mobile" id="mobile-nav" role="navigation" aria-label="Menu mobile" aria-hidden="true">
+    <a href="#inicio">In&iacute;cio</a>
+    <a href="#sobre">Quem sou</a>
+    <a href="#propostas">Propostas</a>
+    <a href="#manifesto">Por que agora</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-badge fade-in">Candidatura 2025</span>
+        <h1 class="hero-title fade-in fade-in-delay-1">
+          Uma Defensoria com <span class="highlight-gold">transpar&ecirc;ncia</span>, <span class="highlight-green">inova&ccedil;&atilde;o</span> e <span class="highlight-blue">respeito</span> a quem faz a institui&ccedil;&atilde;o funcionar.
+        </h1>
+        <p class="hero-subtitle fade-in fade-in-delay-2">
+          Candidata a Defensora P&uacute;blica-Geral do Estado do Rio Grande do Sul. Por uma gest&atilde;o que escuta, moderniza e valoriza.
+        </p>
+        <a href="#propostas" class="hero-cta fade-in fade-in-delay-3">
+          Conhe&ccedil;a as propostas
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </a>
+      </div>
+      <div class="hero-photo fade-in fade-in-delay-2">
+        <img src="foto-rafaela.jpeg" alt="Rafaela Consalter, candidata a Defensora P&uacute;blica-Geral do RS" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="hero-photo-placeholder" style="display:none;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Foto da candidata</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-divider"></div>
+        <h2>Quem &eacute; Rafaela Consalter</h2>
+        <p>Trajet&oacute;ria, forma&ccedil;&atilde;o e compromisso com a Defensoria P&uacute;blica.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <p>
+            Rafaela Consalter &eacute; Defensora P&uacute;blica do Estado do Rio Grande do Sul, com uma trajet&oacute;ria marcada pela dedica&ccedil;&atilde;o ao servi&ccedil;o p&uacute;blico, &agrave; defesa dos direitos fundamentais e ao fortalecimento institucional da Defensoria. Ao longo de sua carreira, tem atuado em diversas &aacute;reas estrat&eacute;gicas da institui&ccedil;&atilde;o, acumulando experi&ecirc;ncia tanto na ponta do atendimento como em fun&ccedil;&otilde;es de gest&atilde;o e articula&ccedil;&atilde;o institucional.
+          </p>
+          <p>
+            Sua forma&ccedil;&atilde;o acad&ecirc;mica s&oacute;lida, combinada com a viv&ecirc;ncia pr&aacute;tica do dia a dia da Defensoria &mdash; nas comarcas do interior e da capital &mdash;, confere a ela uma compreens&atilde;o ampla dos desafios que a institui&ccedil;&atilde;o enfrenta e das oportunidades que pode aproveitar para se modernizar sem perder sua ess&ecirc;ncia: a defesa intransigente dos mais vulner&aacute;veis.
+          </p>
+          <p>
+            Esta candidatura nasce do di&aacute;logo com colegas, da escuta atenta das demandas da carreira e da convic&ccedil;&atilde;o de que &eacute; poss&iacute;vel construir uma gest&atilde;o transparente, eficiente e verdadeiramente comprometida com quem faz a Defensoria P&uacute;blica funcionar todos os dias.
+          </p>
+
+          <div class="about-note">
+            O curr&iacute;culo completo de Rafaela Consalter ser&aacute; disponibilizado em breve nesta p&aacute;gina, com detalhamento de sua forma&ccedil;&atilde;o acad&ecirc;mica, cargos exercidos e contribui&ccedil;&otilde;es &agrave; Defensoria P&uacute;blica.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROPOSALS ========== -->
+  <section class="section section-alt" id="propostas">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-divider"></div>
+        <h2>Propostas e Eixos da Campanha</h2>
+        <p>Um plano concreto para a Defensoria que o Rio Grande do Sul precisa &mdash; organizado em eixos tem&aacute;ticos com a&ccedil;&otilde;es objetivas.</p>
+      </div>
+
+      <!-- Axis Navigation -->
+      <div class="proposals-nav" role="tablist" aria-label="Eixos tem&aacute;ticos">
+        <button class="active" data-axis="all">Todos os eixos</button>
+        <button data-axis="carreira">Carreira</button>
+        <button data-axis="organizacao">Organiza&ccedil;&atilde;o</button>
+        <button data-axis="inovacao">Inova&ccedil;&atilde;o e IA</button>
+        <button data-axis="transparencia">Transpar&ecirc;ncia</button>
+        <button data-axis="extrajudicial">Extrajudicial</button>
+        <button data-axis="servidores">Servidores</button>
+      </div>
+
+      <!-- EIXO 1: Carreira -->
+      <div class="proposals-category fade-in" data-category="carreira" id="eixo-carreira">
+        <div class="proposals-category-header">
+          <div class="proposals-category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+          </div>
+          <h3>
+            <span class="axis-number">Eixo 1</span>
+            Valoriza&ccedil;&atilde;o da Carreira de Defensoras e Defensores
+          </h3>
+        </div>
+        <div class="proposals-grid">
+          <div class="proposal-card">
+            <h4>Defesa das Prerrogativas e Autonomia Funcional</h4>
+            <p>Defesa permanente das prerrogativas, da autonomia funcional e das condi&ccedil;&otilde;es de exerc&iacute;cio da carreira, com gest&atilde;o atenta &agrave;s realidades da Capital e do Interior.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Adicional por Tempo de Servi&ccedil;o (ATS)</h4>
+            <p>Implanta&ccedil;&atilde;o do ATS como reconhecimento da trajet&oacute;ria funcional, da experi&ecirc;ncia acumulada e da dedica&ccedil;&atilde;o &agrave; Defensoria P&uacute;blica.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Pagamento do Acervo nas F&eacute;rias e Folgas</h4>
+            <p>Garantia do pagamento do acervo durante per&iacute;odos de f&eacute;rias e folgas, assegurando a justa remunera&ccedil;&atilde;o pelo trabalho realizado.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EIXO 2: Organiza&ccedil;&atilde;o -->
+      <div class="proposals-category fade-in" data-category="organizacao" id="eixo-organizacao">
+        <div class="proposals-category-header">
+          <div class="proposals-category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          </div>
+          <h3>
+            <span class="axis-number">Eixo 2</span>
+            Organiza&ccedil;&atilde;o do Trabalho e Efici&ecirc;ncia Administrativa
+          </h3>
+        </div>
+        <div class="proposals-grid">
+          <div class="proposal-card">
+            <h4>Regulamenta&ccedil;&atilde;o das Novas Defensorias</h4>
+            <p>Implementa&ccedil;&atilde;o da revis&atilde;o de atribui&ccedil;&otilde;es prometida e n&atilde;o cumprida, e regulariza&ccedil;&atilde;o das cerca de 60 Defensorias que atuam sob regime de acumula&ccedil;&atilde;o cautelar h&aacute; mais de um ano.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Restabelecimento do Plant&atilde;o de Flagrantes</h4>
+            <p>Retomada da iniciativa de sucesso que foi inviabilizada por redistribui&ccedil;&atilde;o de comarcas desconectada da realidade e sem equil&iacute;brio no volume de trabalho.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Restabelecimento da NUVEM</h4>
+            <p>Reativa&ccedil;&atilde;o do instrumento de gest&atilde;o de trabalho para mitiga&ccedil;&atilde;o de sobrecargas, revertendo o desmantelamento feito pela gest&atilde;o atual sem a cria&ccedil;&atilde;o de alternativa equivalente.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Reorganiza&ccedil;&atilde;o dos Fluxos Administrativos</h4>
+            <p>Defini&ccedil;&atilde;o clara das atribui&ccedil;&otilde;es dos assessores nos processos de f&eacute;rias, substitui&ccedil;&otilde;es e gest&atilde;o de demandas envolvendo servidores.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Edital de Remo&ccedil;&atilde;o e Revis&atilde;o de Folgas</h4>
+            <p>Abertura imediata de edital de remo&ccedil;&atilde;o &mdash; nenhum foi aberto nos &uacute;ltimos dois anos &mdash; e debate sobre unifica&ccedil;&atilde;o de comarcas obrigat&oacute;ria e prescri&ccedil;&atilde;o de folgas.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Autonomia das Regionais</h4>
+            <p>Retomada do poder de gest&atilde;o para que defensores definam a rotina de suas equipes, incluindo possibilidade de home office, sem imposi&ccedil;&atilde;o de regras sem escuta.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EIXO 3: Inova&ccedil;&atilde;o e IA -->
+      <div class="proposals-category fade-in" data-category="inovacao" id="eixo-inovacao">
+        <div class="proposals-category-header">
+          <div class="proposals-category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3>
+            <span class="axis-number">Eixo 3</span>
+            Inova&ccedil;&atilde;o Tecnol&oacute;gica e Intelig&ecirc;ncia Artificial
+          </h3>
+        </div>
+        <div class="proposals-grid">
+          <div class="proposal-card">
+            <h4>IA como Assistente de Atendimento em Tempo Real</h4>
+            <p>Ferramenta de IA que acompanha o atendimento presencial, transcrevendo a conversa, acessando modelos e sugerindo pe&ccedil;as e teses aplic&aacute;veis &mdash; estruturando a minuta enquanto o atendimento acontece.</p>
+            <button class="proposal-expand" aria-expanded="false">
+              Saiba mais
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="proposal-detail">
+              <div class="proposal-detail-inner">
+                O defensor e a equipe ganham tempo para o que exige julgamento humano: a escuta qualificada, a estrat&eacute;gia do caso, a decis&atilde;o sobre o melhor caminho. A IA cuida do trabalho repetitivo &mdash; formatar, buscar modelo, preencher dados.
+              </div>
+            </div>
+          </div>
+
+          <div class="proposal-card">
+            <h4>Integra&ccedil;&atilde;o Nativa de IA no Portal da Defensoria</h4>
+            <p>Incorporar intelig&ecirc;ncia artificial diretamente nos sistemas institucionais para automatizar resumo de processos, extra&ccedil;&atilde;o de informa&ccedil;&otilde;es, identifica&ccedil;&atilde;o de prazos e alertas.</p>
+            <button class="proposal-expand" aria-expanded="false">
+              Saiba mais
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="proposal-detail">
+              <div class="proposal-detail-inner">
+                Com IA integrada ao sistema, o resumo j&aacute; est&aacute; pronto, os pontos cr&iacute;ticos destacados, os documentos relevantes identificados. O defensor abre o caso e j&aacute; encontra o essencial organizado &mdash; sem precisar ficar baixando, subindo e enviando arquivos.
+              </div>
+            </div>
+          </div>
+
+          <div class="proposal-card">
+            <h4>Programa de Capacita&ccedil;&atilde;o Cont&iacute;nua em IA</h4>
+            <p>Trilha permanente de forma&ccedil;&atilde;o para defensores, servidores e estagi&aacute;rios &mdash; pr&aacute;tica, com casos reais da Defensoria, atualizada conforme as tecnologias evoluem.</p>
+            <button class="proposal-expand" aria-expanded="false">
+              Saiba mais
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="proposal-detail">
+              <div class="proposal-detail-inner">
+                Hoje a Defensoria n&atilde;o oferece forma&ccedil;&atilde;o estruturada em intelig&ecirc;ncia artificial. Defensores e servidores aprendem sozinhos ou simplesmente n&atilde;o aprendem. O resultado: ferramentas subutilizadas, resist&ecirc;ncia &agrave; mudan&ccedil;a e uma institui&ccedil;&atilde;o que fica para tr&aacute;s enquanto o Judici&aacute;rio e a advocacia privada avan&ccedil;am. A tecnologia muda toda semana &mdash; o programa precisa de m&oacute;dulos curtos e atualizados, n&atilde;o apenas um curso anual que j&aacute; nasce desatualizado.
+              </div>
+            </div>
+          </div>
+
+          <div class="proposal-card">
+            <h4>Portal de Consulta Processual para o Assistido</h4>
+            <p>Sistema onde o pr&oacute;prio assistido acompanha seu processo de forma simplificada, com explica&ccedil;&otilde;es em linguagem acess&iacute;vel geradas por IA.</p>
+            <button class="proposal-expand" aria-expanded="false">
+              Saiba mais
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="proposal-detail">
+              <div class="proposal-detail-inner">
+                Boa parte dos contatos que chegam &agrave; Defensoria s&atilde;o pedidos de informa&ccedil;&atilde;o b&aacute;sica. Perguntas leg&iacute;timas, mas que n&atilde;o exigem defensor &mdash; exigem acesso. Um portal com linguagem simples, traduzida por IA, devolve autonomia ao assistido e libera a estrutura para quem realmente precisa de atendimento t&eacute;cnico.
+              </div>
+            </div>
+          </div>
+
+          <div class="proposal-card">
+            <h4>Triagem Inteligente de Intima&ccedil;&otilde;es</h4>
+            <p>IA para classificar intima&ccedil;&otilde;es por urg&ecirc;ncia, tipo de provid&ecirc;ncia e complexidade, priorizando automaticamente e alertando sobre prazos cr&iacute;ticos.</p>
+            <button class="proposal-expand" aria-expanded="false">
+              Saiba mais
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="proposal-detail">
+              <div class="proposal-detail-inner">
+                A triagem manual consome horas do dia e ainda assim falha. Intima&ccedil;&otilde;es urgentes se misturam com mero expediente, prazos curtos passam despercebidos, redistribui&ccedil;&otilde;es atrasam. Com a IA fazendo a primeira leitura, o defensor recebe sua pauta j&aacute; organizada por prioridade &mdash; e pode come&ccedil;ar o dia pelo que realmente importa.
+              </div>
+            </div>
+          </div>
+
+          <div class="proposal-card">
+            <h4>Sistema Pr&oacute;prio de Intelig&ecirc;ncia Artificial</h4>
+            <p>Desenvolvimento de solu&ccedil;&atilde;o pr&oacute;pria de IA, reduzindo a depend&ecirc;ncia de terceiros e garantindo maior autonomia e seguran&ccedil;a da informa&ccedil;&atilde;o institucional.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EIXO 4: Transpar&ecirc;ncia -->
+      <div class="proposals-category fade-in" data-category="transparencia" id="eixo-transparencia">
+        <div class="proposals-category-header">
+          <div class="proposals-category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>
+            <span class="axis-number">Eixo 4</span>
+            Transpar&ecirc;ncia, Planejamento e Governan&ccedil;a
+          </h3>
+        </div>
+        <div class="proposals-grid">
+          <div class="proposal-card">
+            <h4>Transpar&ecirc;ncia Ativa e Presta&ccedil;&atilde;o de Contas</h4>
+            <p>Publicidade plena sobre gest&atilde;o de recursos p&uacute;blicos, incluindo informa&ccedil;&otilde;es claras sobre pagamentos, acordos de suplementa&ccedil;&atilde;o or&ccedil;ament&aacute;ria e a&ccedil;&otilde;es judiciais institucionais. Publicidade &eacute; a regra; sigilo, a exce&ccedil;&atilde;o estritamente legal.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Democratiza&ccedil;&atilde;o do Debate Or&ccedil;ament&aacute;rio</h4>
+            <p>Disponibiliza&ccedil;&atilde;o de informa&ccedil;&otilde;es or&ccedil;ament&aacute;rias claras e acess&iacute;veis, promovendo corresponsabilidade e compreens&atilde;o das escolhas administrativas por parte de toda a carreira.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Revis&atilde;o de Expedientes Pendentes</h4>
+            <p>Encaminhamento de todos os expedientes pendentes com divulga&ccedil;&atilde;o das medidas administrativas e institucionais cab&iacute;veis, incluindo pleitos que estavam paralisados.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Restabelecimento do Jasper e do Consulta Institucional</h4>
+            <p>Reativa&ccedil;&atilde;o do sistema aberto de consulta ao volume de atribui&ccedil;&otilde;es e do Consulta Institucional, ferramentas de transpar&ecirc;ncia essenciais que foram desativadas ou ocultadas.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Roteiro de Interioriza&ccedil;&atilde;o e Gabinete Aberto</h4>
+            <p>Retomada de visitas regulares &agrave;s regionais e abertura permanente do Gabinete da Defensora P&uacute;blica-Geral, com recep&ccedil;&atilde;o acolhedora a todos e todas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EIXO 5: Extrajudicial -->
+      <div class="proposals-category fade-in" data-category="extrajudicial" id="eixo-extrajudicial">
+        <div class="proposals-category-header">
+          <div class="proposals-category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>
+            <span class="axis-number">Eixo 5</span>
+            Fortalecimento da Atua&ccedil;&atilde;o Extrajudicial
+          </h3>
+        </div>
+        <div class="proposals-grid">
+          <div class="proposal-card">
+            <h4>C&acirc;maras de Concilia&ccedil;&atilde;o e Atua&ccedil;&atilde;o Resolutiva</h4>
+            <p>Restabelecimento e fortalecimento das C&acirc;maras de Concilia&ccedil;&atilde;o, com incentivo institucional estruturado &agrave; atua&ccedil;&atilde;o extrajudicial, priorizando solu&ccedil;&otilde;es eficientes e socialmente adequadas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EIXO 6: Servidores -->
+      <div class="proposals-category fade-in" data-category="servidores" id="eixo-servidores">
+        <div class="proposals-category-header">
+          <div class="proposals-category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>
+            <span class="axis-number">Eixo 6</span>
+            Valoriza&ccedil;&atilde;o dos Servidores
+          </h3>
+        </div>
+        <div class="proposals-grid">
+          <div class="proposal-card">
+            <h4>Valoriza&ccedil;&atilde;o Efetiva e Respeito Institucional</h4>
+            <p>Valoriza&ccedil;&atilde;o dos servidores com afastamento de iniciativas que fragilizem ou descredibilizem seu papel institucional, assegurando reconhecimento e seguran&ccedil;a.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Fluxos Claros e Ambiente Saud&aacute;vel</h4>
+            <p>Aprimoramento dos fluxos administrativos e das rela&ccedil;&otilde;es de trabalho, com clareza de fun&ccedil;&otilde;es, respeito institucional e ambiente organizacional saud&aacute;vel.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== MANIFESTO ========== -->
+  <section class="section section-dark" id="manifesto">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-divider"></div>
+        <h2>Por que esta candidatura</h2>
+      </div>
+
+      <div class="manifesto-content fade-in">
+        <blockquote>
+          A Defensoria P&uacute;blica precisa de uma gest&atilde;o que respeite quem a constr&oacute;i todos os dias &mdash; e que tenha a coragem de fazer diferente.
+        </blockquote>
+
+        <p>
+          Esta candidatura nasce de uma convic&ccedil;&atilde;o simples: a Defensoria P&uacute;blica do Rio Grande do Sul merece uma administra&ccedil;&atilde;o que funcione com transpar&ecirc;ncia, que se comunique com clareza e que trate defensoras, defensores e servidores com o respeito que o servi&ccedil;o p&uacute;blico exige.
+        </p>
+        <p>
+          Nos &uacute;ltimos anos, compromissos assumidos n&atilde;o foram cumpridos. Sistemas de transpar&ecirc;ncia foram desativados. Editais de remo&ccedil;&atilde;o deixaram de ser abertos. Instrumentos de gest&atilde;o do trabalho foram desmantelados sem alternativa. O di&aacute;logo com a carreira se enfraqueceu. &Eacute; poss&iacute;vel &mdash; e necess&aacute;rio &mdash; fazer diferente.
+        </p>
+        <p>
+          A proposta &eacute; clara: uma Defensoria que usa a tecnologia a favor do seu trabalho, que valoriza a experi&ecirc;ncia de quem est&aacute; na ponta, que presta contas de suas decis&otilde;es e que n&atilde;o tem medo de abrir o gabinete, ouvir cr&iacute;ticas e corrigir rumos. Uma gest&atilde;o que entende que modernizar n&atilde;o &eacute; substituir pessoas por m&aacute;quinas, mas dar a cada defensor e servidor as ferramentas para fazer melhor o que j&aacute; faz com dedica&ccedil;&atilde;o.
+        </p>
+        <p>
+          Essa &eacute; a Defensoria que podemos construir juntos.
+        </p>
+
+        <div class="manifesto-signature">
+          <div class="manifesto-signature-line"></div>
+          <span class="manifesto-signature-text">Rafaela Consalter</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="section" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-divider"></div>
+        <h2>Rafaela na Defensoria</h2>
+        <p>Uma trajet&oacute;ria constru&iacute;da com presen&ccedil;a, dedica&ccedil;&atilde;o e compromisso com a institui&ccedil;&atilde;o.</p>
+      </div>
+
+      <div class="gallery fade-in">
+        <div class="gallery-track" id="galleryTrack">
+          <div class="gallery-slide">
+            <img src="1.jpeg" alt="Rafaela Consalter em atua&ccedil;&atilde;o na Defensoria P&uacute;blica" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="2.jpeg" alt="Rafaela Consalter em atua&ccedil;&atilde;o na Defensoria P&uacute;blica" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="3.jpeg" alt="Rafaela Consalter em atua&ccedil;&atilde;o na Defensoria P&uacute;blica" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="4.jpeg" alt="Rafaela Consalter em atua&ccedil;&atilde;o na Defensoria P&uacute;blica" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="5 (3).jpeg" alt="Rafaela Consalter em atua&ccedil;&atilde;o na Defensoria P&uacute;blica" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="6.jpeg" alt="Rafaela Consalter em atua&ccedil;&atilde;o na Defensoria P&uacute;blica" loading="lazy">
+          </div>
+        </div>
+
+        <div class="gallery-controls">
+          <button class="gallery-btn gallery-prev" aria-label="Foto anterior">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="gallery-dots" id="galleryDots"></div>
+          <button class="gallery-btn gallery-next" aria-label="Pr&oacute;xima foto">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section" id="contato">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-divider"></div>
+        <h2>Contato e Redes Sociais</h2>
+        <p>Acompanhe a campanha e entre em contato.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card fade-in">
+          <p>
+            Acompanhe as atualiza&ccedil;&otilde;es da campanha, participe do debate e compartilhe suas ideias. A constru&ccedil;&atilde;o de uma Defensoria melhor come&ccedil;a pelo di&aacute;logo.
+          </p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/rafaelaconsalter/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil no Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Instagram
+            </a>
+            <a href="https://www.youtube.com/@rafaelaconsalter" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Canal no YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+              YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          Rafaela Consalter <span>&middot;</span> Defensora P&uacute;blica-Geral
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-text">
+          Candidatura a Defensora P&uacute;blica-Geral do Estado do Rio Grande do Sul<br>
+          Defensoria P&uacute;blica do Estado do RS
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" aria-label="Voltar ao topo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // ---- Header scroll effect ----
+      const header = document.querySelector('.header');
+      let lastScroll = 0;
+
+      function onScroll() {
+        const scrollY = window.scrollY;
+        header.classList.toggle('scrolled', scrollY > 20);
+        lastScroll = scrollY;
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      // ---- Mobile menu ----
+      const menuToggle = document.querySelector('.menu-toggle');
+      const mobileNav = document.querySelector('.nav-mobile');
+      const mobileLinks = mobileNav.querySelectorAll('a');
+
+      function toggleMenu() {
+        const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !isOpen);
+        mobileNav.classList.toggle('open', !isOpen);
+        mobileNav.setAttribute('aria-hidden', isOpen);
+        document.body.style.overflow = !isOpen ? 'hidden' : '';
+      }
+
+      menuToggle.addEventListener('click', toggleMenu);
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          menuToggle.setAttribute('aria-expanded', 'false');
+          mobileNav.classList.remove('open');
+          mobileNav.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        });
+      });
+
+      // Close on Escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
+          toggleMenu();
+          menuToggle.focus();
+        }
+      });
+
+      // ---- Active nav link on scroll ----
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-desktop a, .nav-mobile a');
+
+      function updateActiveLink() {
+        const scrollPos = window.scrollY + 120;
+
+        sections.forEach(section => {
+          const top = section.offsetTop;
+          const height = section.offsetHeight;
+          const id = section.getAttribute('id');
+
+          if (scrollPos >= top && scrollPos < top + height) {
+            navLinks.forEach(link => {
+              link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+            });
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveLink, { passive: true });
+      updateActiveLink();
+
+      // ---- Proposal expand/collapse ----
+      document.querySelectorAll('.proposal-expand').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const detail = this.nextElementSibling;
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+          this.setAttribute('aria-expanded', !isExpanded);
+          this.classList.toggle('expanded', !isExpanded);
+
+          if (!isExpanded) {
+            detail.style.maxHeight = detail.scrollHeight + 'px';
+          } else {
+            detail.style.maxHeight = '0';
+          }
+        });
+      });
+
+      // ---- Proposals filter navigation ----
+      const filterBtns = document.querySelectorAll('.proposals-nav button');
+      const categories = document.querySelectorAll('.proposals-category');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const axis = this.dataset.axis;
+
+          filterBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+
+          categories.forEach(cat => {
+            if (axis === 'all' || cat.dataset.category === axis) {
+              cat.style.display = '';
+              cat.style.opacity = '1';
+            } else {
+              cat.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // ---- Scroll to top button ----
+      const scrollTopBtn = document.querySelector('.scroll-top');
+
+      function toggleScrollTop() {
+        scrollTopBtn.classList.toggle('visible', window.scrollY > 500);
+      }
+
+      window.addEventListener('scroll', toggleScrollTop, { passive: true });
+
+      scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // ---- Intersection Observer for fade-in ----
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -60px 0px',
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+      // ---- Gallery / Carousel ----
+      const track = document.getElementById('galleryTrack');
+      const dotsContainer = document.getElementById('galleryDots');
+      const slides = track ? track.querySelectorAll('.gallery-slide') : [];
+      const totalSlides = slides.length;
+      let currentSlide = 0;
+      let galleryInterval;
+
+      if (track && totalSlides > 0) {
+        // Create dots
+        for (let i = 0; i < totalSlides; i++) {
+          const dot = document.createElement('button');
+          dot.className = 'gallery-dot' + (i === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', 'Ir para foto ' + (i + 1));
+          dot.addEventListener('click', () => goToSlide(i));
+          dotsContainer.appendChild(dot);
+        }
+
+        function goToSlide(index) {
+          currentSlide = index;
+          track.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
+          const dots = dotsContainer.querySelectorAll('.gallery-dot');
+          dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+        }
+
+        function nextSlide() {
+          goToSlide((currentSlide + 1) % totalSlides);
+        }
+
+        function prevSlide() {
+          goToSlide((currentSlide - 1 + totalSlides) % totalSlides);
+        }
+
+        document.querySelector('.gallery-next').addEventListener('click', () => {
+          nextSlide();
+          resetAutoplay();
+        });
+
+        document.querySelector('.gallery-prev').addEventListener('click', () => {
+          prevSlide();
+          resetAutoplay();
+        });
+
+        // Autoplay
+        function startAutoplay() {
+          galleryInterval = setInterval(nextSlide, 4000);
+        }
+
+        function resetAutoplay() {
+          clearInterval(galleryInterval);
+          startAutoplay();
+        }
+
+        startAutoplay();
+
+        // Pause on hover
+        const gallery = document.querySelector('.gallery');
+        gallery.addEventListener('mouseenter', () => clearInterval(galleryInterval));
+        gallery.addEventListener('mouseleave', startAutoplay);
+
+        // Touch/swipe support
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        track.addEventListener('touchstart', (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        track.addEventListener('touchend', (e) => {
+          touchEndX = e.changedTouches[0].screenX;
+          const diff = touchStartX - touchEndX;
+          if (Math.abs(diff) > 50) {
+            if (diff > 0) nextSlide();
+            else prevSlide();
+            resetAutoplay();
+          }
+        }, { passive: true });
+      }
+
+      // ---- Keyboard navigation for proposal filter ----
+      const navContainer = document.querySelector('.proposals-nav');
+      navContainer.addEventListener('keydown', (e) => {
+        const btns = Array.from(navContainer.querySelectorAll('button'));
+        const idx = btns.indexOf(document.activeElement);
+
+        if (e.key === 'ArrowRight' && idx < btns.length - 1) {
+          e.preventDefault();
+          btns[idx + 1].focus();
+        } else if (e.key === 'ArrowLeft' && idx > 0) {
+          e.preventDefault();
+          btns[idx - 1].focus();
+        }
+      });
+
+    })();
+  </script>
+</body>
+</html>
