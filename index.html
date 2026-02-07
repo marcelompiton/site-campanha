@@ -1344,11 +1344,11 @@
       <!-- Proposals Counter -->
       <div class="proposals-counter fade-in">
         <div class="counter-item">
-          <div class="counter-number">26</div>
+          <div class="counter-number" data-target="26">0</div>
           <div class="counter-label">propostas concretas</div>
         </div>
         <div class="counter-item">
-          <div class="counter-number">6</div>
+          <div class="counter-number" data-target="6">0</div>
           <div class="counter-label">eixos tem&aacute;ticos</div>
         </div>
       </div>
@@ -1976,6 +1976,37 @@
           btns[idx - 1].focus();
         }
       });
+
+      // ---- Counter animation ----
+      const counters = document.querySelectorAll('.counter-number[data-target]');
+      let counterStarted = false;
+
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !counterStarted) {
+            counterStarted = true;
+            counters.forEach(counter => {
+              const target = +counter.dataset.target;
+              const duration = 1500;
+              const start = performance.now();
+
+              function update(now) {
+                const elapsed = now - start;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                counter.textContent = Math.round(eased * target);
+                if (progress < 1) requestAnimationFrame(update);
+              }
+
+              requestAnimationFrame(update);
+            });
+            counterObserver.disconnect();
+          }
+        });
+      }, { threshold: 0.5 });
+
+      const counterSection = document.querySelector('.proposals-counter');
+      if (counterSection) counterObserver.observe(counterSection);
 
     })();
   </script>
