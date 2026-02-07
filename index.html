@@ -657,39 +657,61 @@
     }
 
     /* ============================================
-       TIMELINE
+       TIMELINE (horizontal)
        ============================================ */
-    .timeline {
-      position: relative;
-      padding-left: 32px;
+    .timeline-wrapper {
       margin-top: 40px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 8px;
+    }
+
+    .timeline-wrapper::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    .timeline-wrapper::-webkit-scrollbar-track {
+      background: var(--color-gray-100);
+      border-radius: 2px;
+    }
+
+    .timeline-wrapper::-webkit-scrollbar-thumb {
+      background: var(--color-gold-300);
+      border-radius: 2px;
+    }
+
+    .timeline {
+      display: flex;
+      position: relative;
+      min-width: max-content;
+      padding: 0 16px;
     }
 
     .timeline::before {
       content: '';
       position: absolute;
-      left: 7px;
-      top: 8px;
-      bottom: 8px;
-      width: 2px;
-      background: linear-gradient(to bottom, var(--color-gold-400), var(--color-green-700));
+      left: 16px;
+      right: 16px;
+      top: 7px;
+      height: 2px;
+      background: linear-gradient(to right, var(--color-gold-400), var(--color-green-700));
       border-radius: 1px;
     }
 
     .timeline-item {
       position: relative;
-      padding-bottom: 28px;
-    }
-
-    .timeline-item:last-child {
-      padding-bottom: 0;
+      padding-top: 28px;
+      min-width: 140px;
+      max-width: 180px;
+      flex-shrink: 0;
+      padding-right: 16px;
     }
 
     .timeline-item::before {
       content: '';
       position: absolute;
-      left: -32px;
-      top: 6px;
+      top: 0;
+      left: 0;
       width: 16px;
       height: 16px;
       border-radius: 50%;
@@ -712,7 +734,7 @@
 
     .timeline-year {
       font-family: var(--font-sans);
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       font-weight: 700;
       color: var(--color-gold-600);
       text-transform: uppercase;
@@ -722,17 +744,17 @@
 
     .timeline-title {
       font-family: var(--font-serif);
-      font-size: 1rem;
+      font-size: 0.88rem;
       font-weight: 600;
       color: var(--color-green-900);
-      margin-bottom: 4px;
-      line-height: 1.4;
+      margin-bottom: 2px;
+      line-height: 1.3;
     }
 
     .timeline-desc {
-      font-size: 0.88rem;
+      font-size: 0.78rem;
       color: var(--color-gray-500);
-      line-height: 1.6;
+      line-height: 1.5;
     }
 
     /* ============================================
@@ -991,20 +1013,15 @@
       display: block;
     }
 
-    .gallery-controls {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      padding: 20px 0;
-    }
-
     .gallery-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       width: 44px;
       height: 44px;
       border-radius: 50%;
-      border: 1px solid var(--color-gray-200);
-      background: var(--color-white);
+      border: none;
+      background: rgba(255,255,255,0.85);
       color: var(--color-gray-700);
       cursor: pointer;
       display: flex;
@@ -1012,12 +1029,24 @@
       justify-content: center;
       transition: all var(--transition-fast);
       flex-shrink: 0;
+      z-index: 10;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .gallery-prev {
+      left: 12px;
+    }
+
+    .gallery-next {
+      right: 12px;
     }
 
     .gallery-btn:hover {
-      border-color: var(--color-green-600);
+      background: var(--color-white);
       color: var(--color-green-800);
-      box-shadow: var(--shadow-sm);
+      box-shadow: var(--shadow-lg);
     }
 
     .gallery-btn svg {
@@ -1029,6 +1058,8 @@
       display: flex;
       gap: 8px;
       align-items: center;
+      justify-content: center;
+      padding: 16px 0;
     }
 
     .gallery-dot {
@@ -1420,7 +1451,8 @@
             Bacharel em Direito (1992&ndash;1997) e Especialista em Direito do Consumidor e Direitos Fundamentais (2004&ndash;2006), ambos pela Universidade Federal do Rio Grande do Sul (UFRGS).
           </p>
 
-          <div class="timeline fade-in">
+          <div class="timeline-wrapper fade-in">
+          <div class="timeline">
             <div class="timeline-item">
               <div class="timeline-year">2001</div>
               <div class="timeline-title">Posse como Defensora P&uacute;blica</div>
@@ -1461,6 +1493,7 @@
               <div class="timeline-title">10&ordf; Defensoria Regional C&iacute;vel de 2&ordm; Grau</div>
               <div class="timeline-desc">Mat&eacute;ria c&iacute;vel nas 1&ordf; e 3&ordf; Vice Presid&ecirc;ncias do TJRS. Foros Central, Restinga e Partenon.</div>
             </div>
+          </div>
           </div>
 
           <div class="about-highlights">
@@ -1841,15 +1874,13 @@
           </div>
         </div>
 
-        <div class="gallery-controls">
-          <button class="gallery-btn gallery-prev" aria-label="Foto anterior">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-          </button>
-          <div class="gallery-dots" id="galleryDots"></div>
-          <button class="gallery-btn gallery-next" aria-label="Pr&oacute;xima foto">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-          </button>
-        </div>
+        <button class="gallery-btn gallery-prev" aria-label="Foto anterior">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button class="gallery-btn gallery-next" aria-label="Pr&oacute;xima foto">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+        <div class="gallery-dots" id="galleryDots"></div>
       </div>
     </div>
   </section>
