@@ -656,106 +656,6 @@
       font-style: italic;
     }
 
-    /* ============================================
-       TIMELINE (horizontal)
-       ============================================ */
-    .timeline-wrapper {
-      margin-top: 40px;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      padding-bottom: 8px;
-    }
-
-    .timeline-wrapper::-webkit-scrollbar {
-      height: 4px;
-    }
-
-    .timeline-wrapper::-webkit-scrollbar-track {
-      background: var(--color-gray-100);
-      border-radius: 2px;
-    }
-
-    .timeline-wrapper::-webkit-scrollbar-thumb {
-      background: var(--color-gold-300);
-      border-radius: 2px;
-    }
-
-    .timeline {
-      display: flex;
-      position: relative;
-      min-width: max-content;
-      padding: 0 16px;
-    }
-
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 16px;
-      right: 16px;
-      top: 7px;
-      height: 2px;
-      background: linear-gradient(to right, var(--color-gold-400), var(--color-green-700));
-      border-radius: 1px;
-    }
-
-    .timeline-item {
-      position: relative;
-      padding-top: 28px;
-      min-width: 140px;
-      max-width: 180px;
-      flex-shrink: 0;
-      padding-right: 16px;
-    }
-
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background: var(--color-white);
-      border: 3px solid var(--color-gold-400);
-      z-index: 1;
-      transition: all var(--transition-base);
-    }
-
-    .timeline-item:hover::before {
-      background: var(--color-gold-400);
-      box-shadow: 0 0 0 4px rgba(212, 186, 106, 0.2);
-    }
-
-    .timeline-item.timeline-current::before {
-      background: var(--color-green-700);
-      border-color: var(--color-green-700);
-      box-shadow: 0 0 0 4px rgba(38, 97, 63, 0.15);
-    }
-
-    .timeline-year {
-      font-family: var(--font-sans);
-      font-size: 0.7rem;
-      font-weight: 700;
-      color: var(--color-gold-600);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 4px;
-    }
-
-    .timeline-title {
-      font-family: var(--font-serif);
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: var(--color-green-900);
-      margin-bottom: 2px;
-      line-height: 1.3;
-    }
-
-    .timeline-desc {
-      font-size: 0.78rem;
-      color: var(--color-gray-500);
-      line-height: 1.5;
-    }
 
     /* ============================================
        PROPOSALS
@@ -1451,50 +1351,15 @@
             Bacharel em Direito (1992&ndash;1997) e Especialista em Direito do Consumidor e Direitos Fundamentais (2004&ndash;2006), ambos pela Universidade Federal do Rio Grande do Sul (UFRGS).
           </p>
 
-          <div class="timeline-wrapper fade-in">
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-year">2001</div>
-              <div class="timeline-title">Posse como Defensora P&uacute;blica</div>
-              <div class="timeline-desc">I Concurso para a Carreira. Comarca de Barra do Ribeiro e Gua&iacute;ba.</div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2005</div>
-              <div class="timeline-title">Secret&aacute;ria Executiva da ADPERGS</div>
-              <div class="timeline-desc">In&iacute;cio da trajet&oacute;ria pol&iacute;tico-institucional.</div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2006</div>
-              <div class="timeline-title">Assessora e Chefe de Gabinete</div>
-              <div class="timeline-desc">Primeira elei&ccedil;&atilde;o para Defensor P&uacute;blico-Geral.</div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2010</div>
-              <div class="timeline-title">Centro de Apoio Operacional</div>
-              <div class="timeline-desc">Presidente dos III e V Concurso para a Carreira e do II Concurso para Servidores.</div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2012</div>
-              <div class="timeline-title">Subcorregedora-Geral</div>
-              <div class="timeline-desc">Dirigente do NUDECONTU e do NUDEC.</div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2018</div>
-              <div class="timeline-title">C&acirc;mara de Concilia&ccedil;&atilde;o C&iacute;vel</div>
-              <div class="timeline-desc">Cria&ccedil;&atilde;o e implanta&ccedil;&atilde;o da C&acirc;mara de Concilia&ccedil;&atilde;o C&iacute;vel.</div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2020 &ndash; 2023</div>
-              <div class="timeline-title">Subdefensora P&uacute;blica-Geral</div>
-              <div class="timeline-desc">Cargo de vice-chefia da institui&ccedil;&atilde;o.</div>
-            </div>
-            <div class="timeline-item timeline-current">
-              <div class="timeline-year">Atual</div>
-              <div class="timeline-title">10&ordf; Defensoria Regional C&iacute;vel de 2&ordm; Grau</div>
-              <div class="timeline-desc">Mat&eacute;ria c&iacute;vel nas 1&ordf; e 3&ordf; Vice Presid&ecirc;ncias do TJRS. Foros Central, Restinga e Partenon.</div>
-            </div>
-          </div>
-          </div>
+          <p>
+            Tomou posse em 2001, tendo assumido a comarca de Barra do Ribeiro e Gua&iacute;ba. Iniciou sua trajet&oacute;ria pol&iacute;tico-institucional como Secret&aacute;ria Executiva da ADPERGS (2005). Na primeira elei&ccedil;&atilde;o para Defensor P&uacute;blico-Geral, em 2006, foi Assessora e Chefe de Gabinete. Assumiu o ent&atilde;o Centro de Apoio Operacional em 2010, foi Presidente dos III e V Concurso para a Carreira, e do II Concurso para o Quadro de Servidores.
+          </p>
+          <p>
+            Foi Subcorregedora-Geral (2012), Dirigente do NUDECONTU e do NUDEC. Criou e implantou a C&acirc;mara de Concilia&ccedil;&atilde;o C&iacute;vel (2018). Foi Subdefensora P&uacute;blica-Geral no per&iacute;odo de 2020 a 2023.
+          </p>
+          <p>
+            Atuou na Unidade Central de Atendimento e Ajuizamento (UCAA), nos Foros Central, da Restinga e do Partenon. Atualmente est&aacute; classificada na 10&ordf; Defensoria Regional C&iacute;vel de 2&ordm; Grau, com atribui&ccedil;&atilde;o na mat&eacute;ria c&iacute;vel que tramita nas 1&ordf; e 3&ordf; Vice Presid&ecirc;ncias do TJRS.
+          </p>
 
           <div class="about-highlights">
             <div class="about-highlight-card">
@@ -1543,22 +1408,57 @@
       <!-- Axis Navigation -->
       <div class="proposals-nav" role="tablist" aria-label="Eixos tem&aacute;ticos">
         <button class="active" data-axis="all">Todos os eixos</button>
+        <button data-axis="transparencia">Transpar&ecirc;ncia</button>
         <button data-axis="carreira">Carreira</button>
         <button data-axis="organizacao">Organiza&ccedil;&atilde;o</button>
         <button data-axis="inovacao">Inova&ccedil;&atilde;o e IA</button>
-        <button data-axis="transparencia">Transpar&ecirc;ncia</button>
         <button data-axis="extrajudicial">Extrajudicial</button>
         <button data-axis="servidores">Servidores</button>
       </div>
 
-      <!-- EIXO 1: Carreira -->
+      <!-- EIXO 1: Transpar&ecirc;ncia -->
+      <div class="proposals-category fade-in" data-category="transparencia" id="eixo-transparencia">
+        <div class="proposals-category-header">
+          <div class="proposals-category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>
+            <span class="axis-number">Eixo 1</span>
+            Transpar&ecirc;ncia, Planejamento e Governan&ccedil;a
+          </h3>
+        </div>
+        <div class="proposals-grid">
+          <div class="proposal-card">
+            <h4>Transpar&ecirc;ncia Ativa e Presta&ccedil;&atilde;o de Contas</h4>
+            <p>Publicidade plena sobre gest&atilde;o de recursos p&uacute;blicos, incluindo informa&ccedil;&otilde;es claras sobre pagamentos, acordos de suplementa&ccedil;&atilde;o or&ccedil;ament&aacute;ria e a&ccedil;&otilde;es judiciais institucionais. Publicidade &eacute; a regra; sigilo, a exce&ccedil;&atilde;o estritamente legal.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Democratiza&ccedil;&atilde;o do Debate Or&ccedil;ament&aacute;rio</h4>
+            <p>Disponibiliza&ccedil;&atilde;o de informa&ccedil;&otilde;es or&ccedil;ament&aacute;rias claras e acess&iacute;veis, promovendo corresponsabilidade e compreens&atilde;o das escolhas administrativas por parte de toda a carreira.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Revis&atilde;o de Expedientes Pendentes</h4>
+            <p>Encaminhamento de todos os expedientes pendentes com divulga&ccedil;&atilde;o das medidas administrativas e institucionais cab&iacute;veis, incluindo pleitos que estavam paralisados.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Restabelecimento do Jasper e do Consulta Institucional</h4>
+            <p>Reativa&ccedil;&atilde;o do sistema aberto de consulta ao volume de atribui&ccedil;&otilde;es e do Consulta Institucional, ferramentas de transpar&ecirc;ncia essenciais que foram desativadas ou ocultadas.</p>
+          </div>
+          <div class="proposal-card">
+            <h4>Roteiro de Interioriza&ccedil;&atilde;o e Gabinete Aberto</h4>
+            <p>Retomada de visitas regulares &agrave;s regionais e abertura permanente do Gabinete da Defensora P&uacute;blica-Geral, com recep&ccedil;&atilde;o acolhedora a todos e todas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EIXO 2: Carreira -->
       <div class="proposals-category fade-in" data-category="carreira" id="eixo-carreira">
         <div class="proposals-category-header">
           <div class="proposals-category-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
           </div>
           <h3>
-            <span class="axis-number">Eixo 1</span>
+            <span class="axis-number">Eixo 2</span>
             Valoriza&ccedil;&atilde;o da Carreira de Defensoras e Defensores
           </h3>
         </div>
@@ -1590,14 +1490,14 @@
         </div>
       </div>
 
-      <!-- EIXO 2: Organiza&ccedil;&atilde;o -->
+      <!-- EIXO 3: Organiza&ccedil;&atilde;o -->
       <div class="proposals-category fade-in" data-category="organizacao" id="eixo-organizacao">
         <div class="proposals-category-header">
           <div class="proposals-category-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
           </div>
           <h3>
-            <span class="axis-number">Eixo 2</span>
+            <span class="axis-number">Eixo 3</span>
             Organiza&ccedil;&atilde;o do Trabalho e Efici&ecirc;ncia Administrativa
           </h3>
         </div>
@@ -1629,14 +1529,14 @@
         </div>
       </div>
 
-      <!-- EIXO 3: Inova&ccedil;&atilde;o e IA -->
+      <!-- EIXO 4: Inova&ccedil;&atilde;o e IA -->
       <div class="proposals-category fade-in" data-category="inovacao" id="eixo-inovacao">
         <div class="proposals-category-header">
           <div class="proposals-category-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
           </div>
           <h3>
-            <span class="axis-number">Eixo 3</span>
+            <span class="axis-number">Eixo 4</span>
             Inova&ccedil;&atilde;o Tecnol&oacute;gica e Intelig&ecirc;ncia Artificial
           </h3>
         </div>
@@ -1711,41 +1611,6 @@
             </div>
           </div>
 
-        </div>
-      </div>
-
-      <!-- EIXO 4: Transpar&ecirc;ncia -->
-      <div class="proposals-category fade-in" data-category="transparencia" id="eixo-transparencia">
-        <div class="proposals-category-header">
-          <div class="proposals-category-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
-          </div>
-          <h3>
-            <span class="axis-number">Eixo 4</span>
-            Transpar&ecirc;ncia, Planejamento e Governan&ccedil;a
-          </h3>
-        </div>
-        <div class="proposals-grid">
-          <div class="proposal-card">
-            <h4>Transpar&ecirc;ncia Ativa e Presta&ccedil;&atilde;o de Contas</h4>
-            <p>Publicidade plena sobre gest&atilde;o de recursos p&uacute;blicos, incluindo informa&ccedil;&otilde;es claras sobre pagamentos, acordos de suplementa&ccedil;&atilde;o or&ccedil;ament&aacute;ria e a&ccedil;&otilde;es judiciais institucionais. Publicidade &eacute; a regra; sigilo, a exce&ccedil;&atilde;o estritamente legal.</p>
-          </div>
-          <div class="proposal-card">
-            <h4>Democratiza&ccedil;&atilde;o do Debate Or&ccedil;ament&aacute;rio</h4>
-            <p>Disponibiliza&ccedil;&atilde;o de informa&ccedil;&otilde;es or&ccedil;ament&aacute;rias claras e acess&iacute;veis, promovendo corresponsabilidade e compreens&atilde;o das escolhas administrativas por parte de toda a carreira.</p>
-          </div>
-          <div class="proposal-card">
-            <h4>Revis&atilde;o de Expedientes Pendentes</h4>
-            <p>Encaminhamento de todos os expedientes pendentes com divulga&ccedil;&atilde;o das medidas administrativas e institucionais cab&iacute;veis, incluindo pleitos que estavam paralisados.</p>
-          </div>
-          <div class="proposal-card">
-            <h4>Restabelecimento do Jasper e do Consulta Institucional</h4>
-            <p>Reativa&ccedil;&atilde;o do sistema aberto de consulta ao volume de atribui&ccedil;&otilde;es e do Consulta Institucional, ferramentas de transpar&ecirc;ncia essenciais que foram desativadas ou ocultadas.</p>
-          </div>
-          <div class="proposal-card">
-            <h4>Roteiro de Interioriza&ccedil;&atilde;o e Gabinete Aberto</h4>
-            <p>Retomada de visitas regulares &agrave;s regionais e abertura permanente do Gabinete da Defensora P&uacute;blica-Geral, com recep&ccedil;&atilde;o acolhedora a todos e todas.</p>
-          </div>
         </div>
       </div>
 
