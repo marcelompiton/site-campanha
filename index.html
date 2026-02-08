@@ -645,6 +645,46 @@
       color: var(--color-green-900);
     }
 
+    .about-bio-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 24px;
+      padding: 12px 24px;
+      background: var(--color-green-50);
+      border: 1px solid var(--color-green-100);
+      border-radius: 8px;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-green-800);
+      cursor: pointer;
+      transition: all var(--transition-base);
+    }
+    .about-bio-toggle:hover {
+      background: var(--color-gold-50);
+      border-color: var(--color-gold-300);
+      color: var(--color-green-900);
+    }
+    .about-bio-toggle .arrow {
+      transition: transform 0.3s ease;
+    }
+    .about-bio-toggle.active .arrow {
+      transform: rotate(180deg);
+    }
+    .about-bio-hidden {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.5s ease, opacity 0.3s ease;
+      margin-top: 0;
+    }
+    .about-bio-hidden.show {
+      max-height: 1000px;
+      opacity: 1;
+      margin-top: 24px;
+    }
+
     .about-note {
       margin-top: 32px;
       padding: 20px 24px;
@@ -1361,19 +1401,6 @@
           <p>
             Rafaela Consalter &eacute; Defensora P&uacute;blica do Estado do Rio Grande do Sul (DPE/RS), egressa do I Concurso para a Carreira. Nascida em Tr&ecirc;s Passos, viveu grande parte da inf&acirc;ncia no interior, quando seu pai atuava como Promotor de Justi&ccedil;a. Casada com Manoel, Piloto e Comandante da empresa GOL, tem dois filhos: Rafael, 18 anos, ingressando na Faculdade de Engenharia da Computa&ccedil;&atilde;o, e Isabela, 13 anos, no 8&ordm; ano do ensino fundamental.
           </p>
-          <p>
-            Bacharel em Direito (1992&ndash;1997) e Especialista em Direito do Consumidor e Direitos Fundamentais (2004&ndash;2006), ambos pela Universidade Federal do Rio Grande do Sul (UFRGS).
-          </p>
-
-          <p>
-            Tomou posse em 2001, tendo assumido a comarca de Barra do Ribeiro e Gua&iacute;ba. Iniciou sua trajet&oacute;ria pol&iacute;tico-institucional como Secret&aacute;ria Executiva da ADPERGS (2005). Na primeira elei&ccedil;&atilde;o para Defensor P&uacute;blico-Geral, em 2006, foi Assessora e Chefe de Gabinete. Assumiu o ent&atilde;o Centro de Apoio Operacional em 2010, foi Presidente dos III e V Concurso para a Carreira, e do II Concurso para o Quadro de Servidores.
-          </p>
-          <p>
-            Foi Subcorregedora-Geral (2012), Dirigente do NUDECONTU e do NUDEC. Criou e implantou a C&acirc;mara de Concilia&ccedil;&atilde;o C&iacute;vel (2018). Foi Subdefensora P&uacute;blica-Geral no per&iacute;odo de 2020 a 2023.
-          </p>
-          <p>
-            Atuou na Unidade Central de Atendimento e Ajuizamento (UCAA), nos Foros Central, da Restinga e da Tristeza. Atualmente est&aacute; classificada na 10&ordf; Defensoria Regional C&iacute;vel de 2&ordm; Grau, com atribui&ccedil;&atilde;o na mat&eacute;ria c&iacute;vel que tramita nas 1&ordf; e 3&ordf; Vice Presid&ecirc;ncias do TJRS.
-          </p>
 
           <div class="about-highlights">
             <div class="about-highlight-card">
@@ -1392,6 +1419,26 @@
               <div class="label">Atua&ccedil;&atilde;o atual</div>
               <div class="value">10&ordf; Defensoria Regional C&iacute;vel de 2&ordm; Grau</div>
             </div>
+          </div>
+
+          <button class="about-bio-toggle" onclick="toggleBio()">
+            <span>Saiba mais sobre a Rafaela</span>
+            <span class="arrow">&#9660;</span>
+          </button>
+
+          <div class="about-bio-hidden" id="about-bio">
+            <p>
+              Bacharel em Direito (1992&ndash;1997) e Especialista em Direito do Consumidor e Direitos Fundamentais (2004&ndash;2006), ambos pela Universidade Federal do Rio Grande do Sul (UFRGS).
+            </p>
+            <p>
+              Tomou posse em 2001, tendo assumido a comarca de Barra do Ribeiro e Gua&iacute;ba. Iniciou sua trajet&oacute;ria pol&iacute;tico-institucional como Secret&aacute;ria Executiva da ADPERGS (2005). Na primeira elei&ccedil;&atilde;o para Defensor P&uacute;blico-Geral, em 2006, foi Assessora e Chefe de Gabinete. Assumiu o ent&atilde;o Centro de Apoio Operacional em 2010, foi Presidente dos III e V Concurso para a Carreira, e do II Concurso para o Quadro de Servidores.
+            </p>
+            <p>
+              Foi Subcorregedora-Geral (2012), Dirigente do NUDECONTU e do NUDEC. Criou e implantou a C&acirc;mara de Concilia&ccedil;&atilde;o C&iacute;vel (2018). Foi Subdefensora P&uacute;blica-Geral no per&iacute;odo de 2020 a 2023.
+            </p>
+            <p>
+              Atuou na Unidade Central de Atendimento e Ajuizamento (UCAA), nos Foros Central, da Restinga e da Tristeza. Atualmente est&aacute; classificada na 10&ordf; Defensoria Regional C&iacute;vel de 2&ordm; Grau, com atribui&ccedil;&atilde;o na mat&eacute;ria c&iacute;vel que tramita nas 1&ordf; e 3&ordf; Vice Presid&ecirc;ncias do TJRS.
+            </p>
           </div>
         </div>
       </div>
@@ -2174,6 +2221,15 @@
       if (heroTitle) heroObserver.observe(heroTitle);
 
     })();
+
+    function toggleBio() {
+      const bio = document.getElementById('about-bio');
+      const btn = document.querySelector('.about-bio-toggle');
+      bio.classList.toggle('show');
+      btn.classList.toggle('active');
+      const label = btn.querySelector('span:first-child');
+      label.textContent = bio.classList.contains('show') ? 'Recolher' : 'Saiba mais sobre a Rafaela';
+    }
   </script>
 </body>
 </html>
