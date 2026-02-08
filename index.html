@@ -645,87 +645,6 @@
       color: var(--color-green-900);
     }
 
-    .about-bio-toggle {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 24px;
-      padding: 12px 24px;
-      background: var(--color-green-50);
-      border: 1px solid var(--color-green-100);
-      border-radius: 8px;
-      font-family: var(--font-sans);
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: var(--color-green-800);
-      cursor: pointer;
-      transition: all var(--transition-base);
-    }
-    .about-bio-toggle:hover {
-      background: var(--color-gold-50);
-      border-color: var(--color-gold-300);
-      color: var(--color-green-900);
-    }
-    .about-bio-toggle .arrow {
-      transition: transform 0.3s ease;
-    }
-    .about-bio-toggle.active .arrow {
-      transform: rotate(180deg);
-    }
-    .about-bio-hidden {
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
-      transition: max-height 0.5s ease, opacity 0.3s ease;
-      margin-top: 0;
-    }
-    .about-bio-hidden.show {
-      max-height: 2000px;
-      opacity: 1;
-      margin-top: 24px;
-    }
-
-    .bio-trajectory {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .bio-trajectory li {
-      display: flex;
-      align-items: baseline;
-      gap: 14px;
-      padding: 10px 0;
-      border-bottom: 1px solid var(--color-gray-100);
-      font-size: 0.95rem;
-      color: var(--color-gray-700);
-      line-height: 1.5;
-    }
-    .bio-trajectory li:last-child {
-      border-bottom: none;
-    }
-    .bio-year {
-      display: inline-block;
-      min-width: 58px;
-      padding: 3px 10px;
-      background: var(--color-gold-50);
-      border: 1px solid var(--color-gold-200);
-      border-radius: 6px;
-      font-family: var(--font-sans);
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--color-gold-600);
-      text-align: center;
-      flex-shrink: 0;
-    }
-    .bio-section-title {
-      font-family: var(--font-serif);
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--color-green-800);
-      margin-bottom: 12px;
-      margin-top: 8px;
-    }
-
     .about-note {
       margin-top: 32px;
       padding: 20px 24px;
@@ -1442,26 +1361,18 @@
           <p>
             Rafaela Consalter &eacute; Defensora P&uacute;blica do Estado do Rio Grande do Sul (DPE/RS), egressa do I Concurso para a Carreira. Nascida em Tr&ecirc;s Passos, viveu grande parte da inf&acirc;ncia no interior, quando seu pai atuava como Promotor de Justi&ccedil;a. Casada com Manoel, Piloto e Comandante da empresa GOL, tem dois filhos: Rafael, 18 anos, ingressando na Faculdade de Engenharia da Computa&ccedil;&atilde;o, e Isabela, 13 anos, no 8&ordm; ano do ensino fundamental.
           </p>
-
-          <div style="margin-top: 24px;">
-            <div class="bio-section-title">Forma&ccedil;&atilde;o</div>
-            <ul class="bio-trajectory">
-              <li><span class="bio-year">1997</span> Bacharel em Direito &mdash; UFRGS</li>
-              <li><span class="bio-year">2006</span> Especialista em Direito do Consumidor e Direitos Fundamentais &mdash; UFRGS</li>
-            </ul>
-
-            <div class="bio-section-title">Trajet&oacute;ria institucional</div>
-            <ul class="bio-trajectory">
-              <li><span class="bio-year">2001</span> Posse como Defensora P&uacute;blica &mdash; comarcas de Barra do Ribeiro e Gua&iacute;ba</li>
-              <li><span class="bio-year">2005</span> Secret&aacute;ria Executiva da ADPERGS</li>
-              <li><span class="bio-year">2006</span> Assessora e Chefe de Gabinete da DPG (1&ordf; elei&ccedil;&atilde;o para Defensor P&uacute;blico-Geral)</li>
-              <li><span class="bio-year">2010</span> Centro de Apoio Operacional &mdash; Presidente dos III e V Concurso para a Carreira</li>
-              <li><span class="bio-year">2012</span> Subcorregedora-Geral &mdash; Dirigente do NUDECONTU e do NUDEC</li>
-              <li><span class="bio-year">2018</span> Cria&ccedil;&atilde;o e implanta&ccedil;&atilde;o da C&acirc;mara de Concilia&ccedil;&atilde;o C&iacute;vel</li>
-              <li><span class="bio-year">2020</span> Subdefensora P&uacute;blica-Geral (at&eacute; 2023)</li>
-              <li><span class="bio-year">Atual</span> 10&ordf; Defensoria Regional C&iacute;vel de 2&ordm; Grau &mdash; mat&eacute;ria c&iacute;vel nas 1&ordf; e 3&ordf; Vice Presid&ecirc;ncias do TJRS</li>
-            </ul>
-          </div>
+          <p>
+            Bacharel em Direito pela UFRGS (1992&ndash;1997) e Especialista em Direito do Consumidor e Direitos Fundamentais (2006), tamb&eacute;m pela UFRGS.
+          </p>
+          <p>
+            Tomou posse em 2001 nas comarcas de Barra do Ribeiro e Gua&iacute;ba. Em 2005, foi Secret&aacute;ria Executiva da ADPERGS. A partir de 2006, atuou como Assessora e Chefe de Gabinete da DPG &mdash; na gest&atilde;o eleita na 1&ordf; elei&ccedil;&atilde;o para Defensor P&uacute;blico-Geral. Em 2010, integrou o Centro de Apoio Operacional e presidiu os III e V Concurso para a Carreira.
+          </p>
+          <p>
+            Foi Subcorregedora-Geral (2012), Dirigente do NUDECONTU e do NUDEC, respons&aacute;vel pela cria&ccedil;&atilde;o e implanta&ccedil;&atilde;o da C&acirc;mara de Concilia&ccedil;&atilde;o C&iacute;vel (2018), e Subdefensora P&uacute;blica-Geral (2020&ndash;2023).
+          </p>
+          <p>
+            Atuou na Unidade Central de Porto Alegre, com destaque para a &aacute;rea c&iacute;vel e a coordena&ccedil;&atilde;o de n&uacute;cleos tem&aacute;ticos. Atualmente &eacute; titular da 10&ordf; Defensoria Regional C&iacute;vel de 2&ordm; Grau, atuando em mat&eacute;ria c&iacute;vel nas 1&ordf; e 3&ordf; Vice Presid&ecirc;ncias do TJRS.
+          </p>
 
           <div class="about-highlights">
             <div class="about-highlight-card">
@@ -2263,14 +2174,6 @@
 
     })();
 
-    function toggleBio() {
-      const bio = document.getElementById('about-bio');
-      const btn = document.querySelector('.about-bio-toggle');
-      bio.classList.toggle('show');
-      btn.classList.toggle('active');
-      const label = btn.querySelector('span:first-child');
-      label.textContent = bio.classList.contains('show') ? 'Recolher' : 'Saiba mais sobre a Rafaela';
-    }
   </script>
 </body>
 </html>
