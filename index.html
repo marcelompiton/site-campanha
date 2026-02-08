@@ -680,9 +680,50 @@
       margin-top: 0;
     }
     .about-bio-hidden.show {
-      max-height: 1000px;
+      max-height: 2000px;
       opacity: 1;
       margin-top: 24px;
+    }
+
+    .bio-trajectory {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .bio-trajectory li {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--color-gray-100);
+      font-size: 0.95rem;
+      color: var(--color-gray-700);
+      line-height: 1.5;
+    }
+    .bio-trajectory li:last-child {
+      border-bottom: none;
+    }
+    .bio-year {
+      display: inline-block;
+      min-width: 58px;
+      padding: 3px 10px;
+      background: var(--color-gold-50);
+      border: 1px solid var(--color-gold-200);
+      border-radius: 6px;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--color-gold-600);
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .bio-section-title {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--color-green-800);
+      margin-bottom: 12px;
+      margin-top: 8px;
     }
 
     .about-note {
@@ -1427,18 +1468,23 @@
           </button>
 
           <div class="about-bio-hidden" id="about-bio">
-            <p>
-              Bacharel em Direito (1992&ndash;1997) e Especialista em Direito do Consumidor e Direitos Fundamentais (2004&ndash;2006), ambos pela Universidade Federal do Rio Grande do Sul (UFRGS).
-            </p>
-            <p>
-              Tomou posse em 2001, tendo assumido a comarca de Barra do Ribeiro e Gua&iacute;ba. Iniciou sua trajet&oacute;ria pol&iacute;tico-institucional como Secret&aacute;ria Executiva da ADPERGS (2005). Na primeira elei&ccedil;&atilde;o para Defensor P&uacute;blico-Geral, em 2006, foi Assessora e Chefe de Gabinete. Assumiu o ent&atilde;o Centro de Apoio Operacional em 2010, foi Presidente dos III e V Concurso para a Carreira, e do II Concurso para o Quadro de Servidores.
-            </p>
-            <p>
-              Foi Subcorregedora-Geral (2012), Dirigente do NUDECONTU e do NUDEC. Criou e implantou a C&acirc;mara de Concilia&ccedil;&atilde;o C&iacute;vel (2018). Foi Subdefensora P&uacute;blica-Geral no per&iacute;odo de 2020 a 2023.
-            </p>
-            <p>
-              Atuou na Unidade Central de Atendimento e Ajuizamento (UCAA), nos Foros Central, da Restinga e da Tristeza. Atualmente est&aacute; classificada na 10&ordf; Defensoria Regional C&iacute;vel de 2&ordm; Grau, com atribui&ccedil;&atilde;o na mat&eacute;ria c&iacute;vel que tramita nas 1&ordf; e 3&ordf; Vice Presid&ecirc;ncias do TJRS.
-            </p>
+            <div class="bio-section-title">Forma&ccedil;&atilde;o</div>
+            <ul class="bio-trajectory">
+              <li><span class="bio-year">1997</span> Bacharel em Direito &mdash; UFRGS</li>
+              <li><span class="bio-year">2006</span> Especialista em Direito do Consumidor e Direitos Fundamentais &mdash; UFRGS</li>
+            </ul>
+
+            <div class="bio-section-title">Trajet&oacute;ria institucional</div>
+            <ul class="bio-trajectory">
+              <li><span class="bio-year">2001</span> Posse como Defensora P&uacute;blica &mdash; comarcas de Barra do Ribeiro e Gua&iacute;ba</li>
+              <li><span class="bio-year">2005</span> Secret&aacute;ria Executiva da ADPERGS</li>
+              <li><span class="bio-year">2006</span> Assessora e Chefe de Gabinete da DPG (1&ordf; elei&ccedil;&atilde;o para Defensor P&uacute;blico-Geral)</li>
+              <li><span class="bio-year">2010</span> Centro de Apoio Operacional &mdash; Presidente dos III e V Concurso para a Carreira</li>
+              <li><span class="bio-year">2012</span> Subcorregedora-Geral &mdash; Dirigente do NUDECONTU e do NUDEC</li>
+              <li><span class="bio-year">2018</span> Cria&ccedil;&atilde;o e implanta&ccedil;&atilde;o da C&acirc;mara de Concilia&ccedil;&atilde;o C&iacute;vel</li>
+              <li><span class="bio-year">2020</span> Subdefensora P&uacute;blica-Geral (at&eacute; 2023)</li>
+              <li><span class="bio-year">Atual</span> 10&ordf; Defensoria Regional C&iacute;vel de 2&ordm; Grau &mdash; mat&eacute;ria c&iacute;vel nas 1&ordf; e 3&ordf; Vice Presid&ecirc;ncias do TJRS</li>
+            </ul>
           </div>
         </div>
       </div>
